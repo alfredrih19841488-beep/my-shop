@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тридевятое царство</title>
+    <style>
+        /* Сброс базовых отступов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Настройка фонового изображения на весь экран */
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Контейнер по центру */
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Верхняя маленькая плашка */
+        .sub-header {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 4px 16px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: -15px;
+            z-index: 2;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Главная карточка с заголовком */
+        .title-card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 35px 20px 25px 20px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+
+        .title-card h1 {
+            color: #ffffff;
+            font-size: 38px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Теги/бейджи со свойствами */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        .tag {
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #222;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 6px;
+        }
+
+        /* Кнопки-ссылки */
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-link {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* Цвета кнопок как на макете */
+        .btn-purple {
+            background-color: #927ac9;
+        }
+
+        .btn-green {
+            background-color: #839d5c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Маленькая плашка сверху -->
+        <div class="sub-header">Твой любимый шоп</div>
+
+        <!-- Заголовок -->
+        <div class="title-card">
+            <h1>Тридевятое<br>Царство</h1>
+        </div>
+
+        <!-- Маленькие плашки/теги -->
+        <div class="tags-container">
+            <span class="tag">Безопасные клады</span>
+            <span class="tag">Стафф лучшего качества</span>
+            <span class="tag">Скидки и плюшки</span>
+            <span class="tag">Обратная связь с душой</span>
+            <span class="tag">Широкий ассортимент</span>
+        </div>
+
+        <!-- Кнопки с ссылками -->
+        <div class="links-container">
+            <a href="ttps://t.me/TheSixtySeventhKingdom_Bot" class="btn-link btn-purple" target="_blank">Перейти в магазин</a>
+            <a href="https://t.me/Kingdom67support" class="btn-link btn-green" target="_blank">Связаться с нами</a>
+            <a href="https://t.me/example_bot" class="btn-link btn-purple" target="_blank">Создать личного бота</a>
+            <a href="https://signal.me/#eu/VO2rLsSbTuRfR51z5VjjNaeYPIW1C0FFGZbcyLhVpB_NXH2F-oZAhqlCZa6_2qpy" class="btn-link btn-green" target="_blank">Мы в Signal</a>
+        </div>
+    </div>
+
+</body>
+</html>
